@@ -1,0 +1,200 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Style de la navigation */
+nav {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul {
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+nav li {
+    margin: 0 80px;
+}
+
+nav a {
+    font-weight: bold;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover,
+nav a:focus {
+    border-bottom: 2px solid #333;
+}
+
+
+
+/* Style de la section des services */
+#services h2{
+    text-align: center;
+}
+#services {
+    background-color: #f1f1f1;
+    padding: 50px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 50px;
+    margin-top: 50px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+/* Style de la section portfolio */
+#projets {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 50px;
+    margin-top: 50px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+/*MAP*/
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:26.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/*footer*/
+
+footer {
+    position: static;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+  }
+
+/*Header*/
+
+  @font-face {
+    font-family: Biko;
+    src:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/biko-black.woff");
+  }
+  body {
+    background: white;
+    margin: 2rem;
+  }
+  header { 
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1000px;
+  }
+  header video { width: 100%; }
+  svg { 
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+  svg text {
+    font-family: Biko, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  svg rect {
+    fill: white;
+  }
+  svg > rect {
+      -webkit-mask: url(#mask);
+      mask: url(#mask);
+  }
+  
+
+/*contact*/
+
+.contact{
+    text-align: center;
+}
+
+/* Style all font awesome icons */
+.fa {
+    margin-top: 20px;
+    padding: 18px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }s
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.5;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #2f3cf3;
+    color: white;
+  }
+  
+  /* Google */
+  .fa-google {
+    background: #be231d;
+    color: white;
+  }

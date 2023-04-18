@@ -1,12 +1,12 @@
 /* Style général */
 body {
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 h1, h2, h3 {
     margin: 0;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 a {
@@ -47,29 +47,32 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-    border-bottom: 2px solid #333;
+    color: rgb(104, 104, 104);
 }
 
 
 
 /* Style de la section des services */
-#services h2{
-    text-align: center;
-}
+
 #services {
+    font-weight: bold;
+    text-align: center;
     background-color: #f1f1f1;
     padding: 50px 0;
+    scroll-margin-top: 70px;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 50px;
-    margin-top: 50px;
+    margin-top: 140px;
+    margin-bottom: 180px;
 }
 
 .grid-item {
     text-align: center;
+    padding: 50px;
 }
 
 .grid-item img {
@@ -82,6 +85,7 @@ nav a:focus {
 #projets {
     padding: 50px 0;
     text-align: center;
+    scroll-margin-top: 70px;
 }
 
 .gallery {
@@ -89,6 +93,7 @@ nav a:focus {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 50px;
     margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .gallery img {
@@ -96,32 +101,81 @@ nav a:focus {
     height: auto;
 }
 
-/*MAP*/
+/*contact*/
 
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:26.25%;
-    position:relative;
-    height:0;
-}
+#contact {
+    display: flex;
+    margin-bottom: 50px;
+    scroll-margin-top: 100px;
+   }
 
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+.info{
+    font-family: Arial, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 70px;
 }
 
 /*footer*/
 
-footer {
-    position: static;
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
+
+  
+  .footer{
+  background:#000;
+  padding:30px 0px;
+  font-family: Arial, sans-serif;
+  text-align:center;
   }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:gray;
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color:gray;
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color:#fff;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  }
+
+
+  
 
 /*Header*/
 
@@ -129,15 +183,14 @@ footer {
     font-family: Biko;
     src:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/biko-black.woff");
   }
-  body {
+ body {
     background: white;
-    margin: 2rem;
   }
-  header { 
+    header { 
     width: 100%;
     margin: 0 auto;
     position: relative;
-    max-width: 1000px;
+    max-width: 1600px;
   }
   header video { width: 100%; }
   svg { 
@@ -149,9 +202,9 @@ footer {
   }
   svg text {
     font-family: Biko, sans-serif;
-    font-weight: 800;
+    font-weight: 1000;
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 38px;
     font-weight: bold;
   }
   svg rect {
@@ -162,39 +215,3 @@ footer {
       mask: url(#mask);
   }
   
-
-/*contact*/
-
-.contact{
-    text-align: center;
-}
-
-/* Style all font awesome icons */
-.fa {
-    margin-top: 20px;
-    padding: 18px;
-    font-size: 20px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }s
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.5;
-  }
-  
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
-  .fa-facebook {
-    background: #2f3cf3;
-    color: white;
-  }
-  
-  /* Google */
-  .fa-google {
-    background: #be231d;
-    color: white;
-  }
